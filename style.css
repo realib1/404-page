@@ -1,0 +1,103 @@
+:root {
+  --ff-main: 'Space Mono';
+  --fw-para: 400;
+  --fs-para: 20px;
+  --ff-header: 'Inconsolata';
+  --fw-header: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono";
+}
+
+main {
+  padding: .5em;
+}
+
+header {
+  font-family: var(--ff-header);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  padding: .5em 1.5em;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main-page {
+  max-width: 65rem;
+  display: flex;
+  justify-content: cented;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.details {
+  margin-left: 5em;
+  color: #33333;
+}
+
+h3 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: var(--ff-main);
+  line-height: 95px;
+  letter-spacing: -0.035rem;
+}
+
+p {
+  font-size: 24px;
+  font-weight: var(--fw-para);
+  line-height: 36px;
+  letter-spacing: -0.035rem;
+}
+
+button {
+  width: 216px;
+  height: 68px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.035rem;
+  text-transform: uppercase;
+  background: #333333;
+}
+
+
+footer {
+  background: #333333;
+  padding: .5em;
+  margin: 0;
+  color: #E1E2E6;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .details {
+    display: block;
+  }
+  
+  img {
+    max-width: 100%
+  }
+  
+  footer {
+    font-size: .85rem;
+  }
+}
